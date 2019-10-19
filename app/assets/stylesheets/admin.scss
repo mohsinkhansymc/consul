@@ -301,6 +301,7 @@ $sidebar-active: #f4fcd0;
 
   .side-menu {
     flex: 25%;
+    min-width: 250px;
 
     > :last-child {
       height: 100%;

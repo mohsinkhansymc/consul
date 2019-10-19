@@ -38,8 +38,8 @@
         <div class="off-canvas-content" data-off-canvas-content>
           <%= render "layouts/header", with_subnavigation: false %>
 
-          <div class="no-margin-top row expanded collapse" data-equalizer>
-            <div class="small-12 medium-3 column" data-equalizer-watch>
+          <div class="dashboard-menu-and-content no-margin-top row expanded collapse">
+            <div>
 
               <div class="show-for-small-only">
                 <button type="button" class="button hollow expanded" data-toggle="offCanvas">
@@ -48,12 +48,12 @@
               </div>
 
               <div id="side_menu" class="hide-for-small-only">
-                <div class="dashboard-sidebar" data-equalizer-watch>
+                <div class="dashboard-sidebar">
                   <%= render "dashboard/menu" %>
                 </div>
               </div>
             </div>
-            <div class="admin-content small-12 medium-9 column" data-equalizer-watch>
+            <div class="admin-content">
               <%= render "layouts/flash" %>
               <%= render "layouts/dashboard/proposal_totals" %>
               <%= render "layouts/dashboard/proposal_header" %>
